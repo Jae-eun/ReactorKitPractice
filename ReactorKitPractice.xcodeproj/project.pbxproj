@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00036BBF230D5D3500E47E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00036BBE230D5D3500E47E71 /* AppDelegate.swift */; };
-		00036BC4230D5D3500E47E71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00036BC2230D5D3500E47E71 /* Main.storyboard */; };
 		00036BC6230D5D3700E47E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00036BC5230D5D3700E47E71 /* Assets.xcassets */; };
 		00036BC9230D5D3700E47E71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00036BC7230D5D3700E47E71 /* LaunchScreen.storyboard */; };
 		00036BD4230D5D3700E47E71 /* ReactorKitPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00036BD3230D5D3700E47E71 /* ReactorKitPracticeTests.swift */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		00036BBB230D5D3500E47E71 /* ReactorKitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactorKitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00036BBE230D5D3500E47E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00036BC3230D5D3500E47E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00036BC5230D5D3700E47E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00036BC8230D5D3700E47E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00036BCA230D5D3700E47E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				00036BBE230D5D3500E47E71 /* AppDelegate.swift */,
-				00036BC2230D5D3500E47E71 /* Main.storyboard */,
 				00036BC5230D5D3700E47E71 /* Assets.xcassets */,
 				00036BC7230D5D3700E47E71 /* LaunchScreen.storyboard */,
 				00036BCA230D5D3700E47E71 /* Info.plist */,
@@ -221,7 +218,6 @@
 				00036BE7230D687A00E47E71 /* Login.storyboard in Resources */,
 				00036BC9230D5D3700E47E71 /* LaunchScreen.storyboard in Resources */,
 				00036BC6230D5D3700E47E71 /* Assets.xcassets in Resources */,
-				00036BC4230D5D3500E47E71 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +324,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		00036BC2230D5D3500E47E71 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00036BC3230D5D3500E47E71 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		00036BC7230D5D3700E47E71 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

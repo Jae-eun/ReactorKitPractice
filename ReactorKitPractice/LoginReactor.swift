@@ -46,13 +46,15 @@ class LoginReactor: Reactor {
         case .id(let idString):
             return Observable.concat([
                 Observable.just(Mutation.setID(id: idString)),
-                Observable.just(Mutation.validate(self.validate(id: idString, pw: currentState.pw)))
+                Observable.just(Mutation.validate(self.validate(id: idString,
+                                                                pw: currentState.pw)))
                 ])
         case .pw(let pwString):
             return
                 Observable.concat([
                     Observable.just(Mutation.setPW(pw: pwString)),
-                    Observable.just(Mutation.validate(self.validate(id: currentState.id, pw: pwString)))
+                    Observable.just(Mutation.validate(self.validate(id: currentState.id,
+                                                                    pw: pwString)))
                     ])
         case .login:
             return Observable.just(Mutation.validateLogin)
@@ -64,10 +66,13 @@ class LoginReactor: Reactor {
         switch mutation {
         case .setID(let id):
             newState.id = id
+            
         case .setPW(let pw):
             newState.pw = pw
+            
         case .validate(let valid):
             newState.isEnableButton = valid
+            
         case .validateLogin:
             if state.isEnableButton {
                 newState.completeText = "성공"
@@ -80,6 +85,6 @@ class LoginReactor: Reactor {
     
     private func validate(id: String?, pw: String?) -> Bool {
         guard let id = id, let pw = pw else { return false }
-        return id.count > 5 && pw.count > 7
+        return id.count >= 6 && pw.count >= 8
     }
 }

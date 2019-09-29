@@ -5,10 +5,9 @@ xcode_sdk: iphonesimulator
 xcode_scheme: ReactorKitPractice
 xcode_destination: platform=iOS Simulator, OS=12.4, name=iPhone 11
 before_install:
-- gem update cocoapods
+- gem install cocoapods-acknowledgements
+- gem install cocoapods
 - pod install --repo-update
 script:
-- travis_retry xctool -workspace ReactorKitPractice.xcworkspace -scheme "ReactorKitPractice" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO run-tests
 - set -o pipefail
 - travis_retry xcodebuild -workspace ReactorKitPractice.xcworkspace -scheme ReactorKitPractice -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
-
